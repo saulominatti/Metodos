@@ -47,5 +47,5 @@ end
 
 
 #Testando a função#
-steffensen(x -> x^2/3, 0.7, 10^(-10), 300)
-steffensen(x -> x^3 - 1, 0.5, 10^(-3), 300)
+#steffensen(x -> x^2/3, 0.7, 10^(-10), 300)
+#steffensen(x -> x^3 - 1, 0.5, 10^(-3), 300)

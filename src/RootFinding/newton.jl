@@ -20,8 +20,8 @@ function newton(f::Function, g::Function, p_0::Float64, tol::Float64, N::Int64)
 end
 
 #Testando a função#
-newton(x -> x^2 - 3, x -> 2x, 0.5, 10^(-10), 50)
-newton(x -> x^3 - 4, x -> 3x^2, 0.5, 10^(-10), 50)
-newton(x -> cos(x), x -> -sin(x), 1.0, 10^(-10), 50)
-newton(x -> x^2, x -> 2x, 0.0, 10^(-10), 50)
-newton(x -> sin(x), x -> cos(x), 1.0, 10^(-1000), 50)
+#newton(x -> x^2 - 3, x -> 2x, 0.5, 10^(-10), 50)
+#newton(x -> x^3 - 4, x -> 3x^2, 0.5, 10^(-10), 50)
+#newton(x -> cos(x), x -> -sin(x), 1.0, 10^(-10), 50)
+#newton(x -> x^2, x -> 2x, 0.0, 10^(-10), 50)
+#newton(x -> sin(x), x -> cos(x), 1.0, 10^(-1000), 50)

@@ -31,5 +31,7 @@ function horner_method(a::Vector{Float64}, x::Float64)
     return [y, z]
 end
 ##Testando a função##
-horner_method([3.0, 1.0, 1.0], 3.0)
-horner_method([2.0, 1.0, 2.0], 3.0)
+#horner_method([3.0, 1.0, 1.0], 3.0)
+#horner_method([2.0, 1.0, 2.0], 3.0)
+#horner_method([2.0, 1.0, -2.0, 0.5, 23.0], 3.0)
+#horner_method([2.0],0.231902)

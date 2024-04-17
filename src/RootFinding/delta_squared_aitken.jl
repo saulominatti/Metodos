@@ -39,7 +39,7 @@ end
 
 
 #Testando a função#
-delta_squared_aitken(x -> 1/(x^2), 32)
+#delta_squared_aitken(x -> 1/(x^2), 32)
 
 
 #A função abaixo #
@@ -101,5 +101,5 @@ end
 
 
 #Testando as funções#
-vdelta_squared_aitken(x -> 1/x, 15)
-sequence(x -> 1/x, 15)
+#vdelta_squared_aitken(x -> 1/x, 15)
+#sequence(x -> 1/x, 15)

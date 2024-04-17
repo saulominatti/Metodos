@@ -24,7 +24,7 @@ function bisection(f::Function, a::Float64, b::Float64, tol::Float64, N::Int64)
 end
 
 #Testando a função:
-bisection(x -> (x^3-3), -10.0, 10.0, 10^(-10), 50)
-bisection(x -> (x^5 - 7), -10.0, 10.0, 10^(-10), 50)
-bisection(x -> (x^5 - 7), -10.0, -7.0, 10^(-10), 50)
-bisection(x -> (x^5 - 38x^3 +x-1), -10.0, 10.0, 10^(-1000), 50)
+#bisection(x -> (x^3-3), -10.0, 10.0, 10^(-10), 50)
+#bisection(x -> (x^5 - 7), -10.0, 10.0, 10^(-10), 50)
+#bisection(x -> (x^5 - 7), -10.0, -7.0, 10^(-10), 50)
+#bisection(x -> (x^5 - 38x^3 +x-1), -10.0, 10.0, 10^(-1000), 50)
