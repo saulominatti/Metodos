@@ -23,7 +23,7 @@ function solve_system(matrix_A::Matrix{Float64}, b::Vector{Float64})
 
     dimension_failure(matrix_A,n) && return
 
-    A = [copy(matrix_A) copy(b)] 
+    A = [copy(matrix_A) copy(b)] #mudar os A por A' depois!!!#
 
     ## O código acima é equivalente a fazer: if dimension_failure(A, n)
        ##                                        return
@@ -94,3 +94,7 @@ function solve_system(matrix_A::Matrix{Float64}, b::Vector{Float64})
     return x
 
 end
+solve_system([1.0 -1 1 1; 2 -1 -1 0; 1 -2 0 1; 5 0 1 -1],  [4.0, -3, 1, 5])
+
+
+ "O sistema não admite única solução."
