@@ -9,7 +9,7 @@
 
 using LinearAlgebra
 
-function inverse_matrix(matrix_A::Matrix{Float64})
+function invert_matrix(matrix_A::Matrix{Float64})
     n = size(matrix_A,1)
 
     if n != size(matrix_A,2)
@@ -34,4 +34,4 @@ function inverse_matrix(matrix_A::Matrix{Float64})
        
 end
 
-# inverse_matrix([1.0 -1 1 1; 2 -1 -1 0; 1 -2 0 1; 5 0 1 -1])
+# invert_matrix([1.0 -1 1 1; 2 -1 -1 0; 1 -2 0 1; 5 0 1 -1])
