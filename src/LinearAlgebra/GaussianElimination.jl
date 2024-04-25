@@ -23,7 +23,7 @@ function solve_system(matrix_A::Matrix{Float64}, b::Vector{Float64})
 
     dimension_failure(matrix_A,n) && return
 
-    A = [copy(matrix_A) copy(b)] #mudar os A por A' depois!!!#
+    A = [copy(matrix_A) copy(b)] 
 
     ## O código acima é equivalente a fazer: if dimension_failure(A, n)
        ##                                        return
