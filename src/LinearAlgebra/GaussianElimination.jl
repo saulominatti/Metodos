@@ -94,7 +94,3 @@ function solve_system(matrix_A::Matrix{Float64}, b::Vector{Float64})
     return x
 
 end
-solve_system([1.0 -1 1 1; 2 -1 -1 0; 1 -2 0 1; 5 0 1 -1],  [4.0, -3, 1, 5])
-
-
- "O sistema não admite única solução."
