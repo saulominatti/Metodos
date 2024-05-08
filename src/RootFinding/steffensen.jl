@@ -1,6 +1,6 @@
 function g(f::Function, x::Float64)
-    return f(x+f(x))/f(x) - 1
-end 
+    return f(x + f(x)) / f(x) - 1
+end
 
 function steffensen(f::Function, p_0::Float64, tol::Float64, N::Int64)
     """
@@ -11,9 +11,9 @@ function steffensen(f::Function, p_0::Float64, tol::Float64, N::Int64)
     p_i = p_0
     p = p_0
 
-    for i in 1:N
-        p = p_i - f(p_i)/g(f, p_i)
-        if abs(p-p_i) < tol
+    for i = 1:N
+        p = p_i - f(p_i) / g(f, p_i)
+        if abs(p - p_i) < tol
             return p
         end
         p_i = p
@@ -31,7 +31,7 @@ function steffensen(f::Function, p_0::Float64, tol::Float64, N::Int64)
     """
     p_i = p_0
 
-    for i in 1:N
+    for i = 1:N
         if f(p_i + f(p_i)) - f(p_i) == 0
             return "Método falhou: problemas no domínio da função"
         end

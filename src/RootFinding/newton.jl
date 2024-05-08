@@ -6,12 +6,12 @@ function newton(f::Function, g::Function, p_0::Float64, tol::Float64, N::Int64)
     """
     p_i = p_0
     p = p_0
-    for i in 1:N
-        if g(p_i)==0
+    for i = 1:N
+        if g(p_i) == 0
             return "Método falhou pois a derivada anulou."
         end
-        p = p_i - f(p_i)/g(p_i)
-        if abs(p-p_i) < tol
+        p = p_i - f(p_i) / g(p_i)
+        if abs(p - p_i) < tol
             return p
         end
         p_i = p

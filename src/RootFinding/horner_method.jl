@@ -7,26 +7,26 @@ function horner_method(a::Vector{Float64}, x::Float64)
     # e o termo de grau 0 é o a_{1}, por exemplo)#
 
     n = length(a) - 1
-    
+
     ## Para avaliar o polinômio caso o grau seja 0 ou 1, da maneira padrão#
     if n == 0
         return [a[1], 0]
     end
     if n == 1
-        return [a[2]*x + a[1], a[2]]
+        return [a[2] * x + a[1], a[2]]
     end
 
     y = a[n+1]
     z = a[n+1]
 
-    
-    for j in n:2
-            y = a[j] + x*y
-            z = y + x*z
-     end
-    
 
-    y = a[1] + x*y
+    for j = n:2
+        y = a[j] + x * y
+        z = y + x * z
+    end
+
+
+    y = a[1] + x * y
 
     return [y, z]
 end

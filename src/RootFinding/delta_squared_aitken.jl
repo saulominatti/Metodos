@@ -26,15 +26,15 @@ function delta_squared_aitken(p::Function, n::Int64)
     """
     if n <= 0
         println("O índice deve ser positivo.")
-        return 
+        return
     end
 
-    if p(n) - 2*p(n+1) + p(n+2) != 0
-        return p(n) - ((p(n+1) - p(n))^2)/(p(n) - 2*p(n+1) + p(n+2))
+    if p(n) - 2 * p(n + 1) + p(n + 2) != 0
+        return p(n) - ((p(n + 1) - p(n))^2) / (p(n) - 2 * p(n + 1) + p(n + 2))
     end
 
     println("Não é possível calcular o termo dessa sequência.")
-    return 
+    return
 end
 
 
@@ -51,16 +51,16 @@ function vdelta_squared_aitken(p::Function, n::Int64)
 
     if n <= 0
         println("O índice deve ser positivo.")
-        return 
+        return
     end
-    
+
     v = zeros(n)
     msg_erro = false
-    
-    for i in 1:n    
-        if p(i) - 2*p(i+1) + p(i+2) != 0
-            v[i] = p(i) - ((p(i+1) - p(i))^2)/(p(i) - 2*p(i+1) + p(i+2))
-        else 
+
+    for i = 1:n
+        if p(i) - 2 * p(i + 1) + p(i + 2) != 0
+            v[i] = p(i) - ((p(i + 1) - p(i))^2) / (p(i) - 2 * p(i + 1) + p(i + 2))
+        else
             msg_erro = true
             break
         end
@@ -77,7 +77,7 @@ end
 
 
 #Testando a função#
-vdelta_squared_aitken(x -> (x+1)/((x+1)^2-1), 15)
+vdelta_squared_aitken(x -> (x + 1) / ((x + 1)^2 - 1), 15)
 
 
 function sequence(p::Function, n::Int64)
@@ -87,13 +87,13 @@ function sequence(p::Function, n::Int64)
     """
     if n <= 0
         println("O índice deve ser positivo.")
-        return 
+        return
     end
-    
+
     v = zeros(n)
-    
-    for i in 1:n    
-       v[i] = p(i)
+
+    for i = 1:n
+        v[i] = p(i)
     end
 
     return v

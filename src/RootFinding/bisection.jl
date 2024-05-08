@@ -9,14 +9,14 @@ function bisection(f::Function, a::Float64, b::Float64, tol::Float64, N::Int64)
     end
     a_i = a
     b_i = b
-    for i in 1:N
+    for i = 1:N
         p = (a_i + b_i) / 2
         f_p = f(p)
         if f_p == 0 || (b_i - a_i) / 2 < tol
             return p
         elseif sign(f(a_i)) * sign(f_p) > 0
             a_i = p
-        else 
+        else
             b_i = p
         end
     end

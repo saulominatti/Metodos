@@ -5,9 +5,9 @@ function fixed_point(g::Function, p_0::Float64, tol::Float64, N::Int64)
     """
     p = p_0
     p_i = p_0
-    for i in 1:N
+    for i = 1:N
         p = g(p_i)
-        if abs(p-p_i) < tol
+        if abs(p - p_i) < tol
             return p
         end
         p_i = p
