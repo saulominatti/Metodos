@@ -19,9 +19,9 @@ function solve_integral(f::Function, a::Float64, b::Float64, number_of_subinterv
 
     for i = 1:2*number_of_subintervals-1
         if i % 2 == 0
-            s1 = f(a + i * h)
+            s1 += f(a + i * h)
         else
-            s2 = f(a + i * h)
+            s2 += f(a + i * h)
         end
     end
 
