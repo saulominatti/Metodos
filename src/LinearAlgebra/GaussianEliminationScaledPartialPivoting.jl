@@ -8,6 +8,9 @@ function solve_system_partial_pivoting(matrix_A::Matrix{Float64}, b::Vector{Floa
     A = [copy(matrix_A) copy(b)]
 
     #Step 1#
+
+    I = 
+
     for i = 1:(n-1)
         #Step 2#
         s = zeros(Float64, n)

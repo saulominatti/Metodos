@@ -21,5 +21,3 @@ export round_sum,
     solve_system_partial_pivoting,
     invert_matrix
 end # module NumericalAnalysis
-
-# Ola mundo #
