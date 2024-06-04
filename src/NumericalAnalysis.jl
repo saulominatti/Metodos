@@ -19,5 +19,7 @@ export round_sum,
     sequence,
     horner_method,
     solve_system_partial_pivoting,
-    invert_matrix
+    invert_matrix,
+    solve_LU,
+    solve_PLU
 end # module NumericalAnalysis

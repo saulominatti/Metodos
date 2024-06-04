@@ -1,3 +1,5 @@
 include("GaussianElimination.jl")
 include("GaussianEliminationScaledPartialPivoting.jl")
 include("Inverse.jl")
+include("LUDecomposition.jl")
+include("PLUDecomposition.jl")
